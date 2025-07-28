@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debojyoti Deb - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-white">DD.</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#skills" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#projects" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#experience" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Learning Journey</a>
+                        <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                        <span class="sr-only">Open main menu</span>
+                        <i data-feather="menu" class="block h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#skills" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#experience" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Learning Journey</a>
+                <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                        Hi, I'm Debojyoti Deb
+                        <span class="block text-indigo-400">B.Tech CSE <span class="mx-3">|</span> AI/ML & Web Development Enthusiast</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-400 mb-8">
+                        A passionate CSE student exploring the world of AI/ML and Web Development through hands-on projects.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Get In Touch</a>
+                        <a href="#projects" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">View My Work</a>
+                    </div>
+                    <div class="mt-8 flex space-x-6">
+                        <a href="https://github.com/Debojyoti9" target="_blank" class="text-gray-400 hover:text-white"><i data-feather="github" class="h-6 w-6"></i></a>
+                        <a href="https://www.linkedin.com/in/debojyoti-2003-deb/" target="_blank" class="text-gray-400 hover:text-white"><i data-feather="linkedin" class="h-6 w-6"></i></a>
+                        <a href="https://www.facebook.com/DebojyotiDeb1122" target="_blank" class="text-gray-400 hover:text-white"><i data-feather="facebook" class="h-6 w-6"></i></a>
+                        <a href="mailto:ddeb8582@gmail.com" class="text-gray-400 hover:text-white"><i data-feather="mail" class="h-6 w-6"></i></a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 flex justify-center">
+                    <img src="https://i.postimg.cc/kGmF927p/IMG-20250626-WA0054-2.jpg" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x400/1F2937/FFFFFF?text=DD';"
+                         alt="Debojyoti Deb" class="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover border-4 border-indigo-500 shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-2 text-white">About Me</h2>
+            <p class="text-indigo-400 text-center mb-12">My story, my passion, and my skills.</p>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2">
+                    <img src="https://placehold.co/600x400/1F2937/FFFFFF?text=Coder" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/1F2937/FFFFFF?text=Coder';"
+                         alt="About me" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:col-span-3">
+                    <h3 class="text-2xl font-semibold text-white mb-4">I'm a CSE undergraduate driven by curiosity.</h3>
+                    <p class="text-gray-400 mb-4">
+                        As a CSE undergraduate, I’m driven by curiosity and a deep interest in AI/ML and Full Stack Development. I’ve been actively building projects that combine these fields, and sharing my work on GitHub. Whether it’s writing efficient Python code or creating responsive web apps with HTML, CSS, and JavaScript, I love turning ideas into working solutions. I'm always open to learning, collaborating, and challenging myself with new opportunities.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1KAc0TeKhN2cGj3NxdFQ8coilKiGFGTRk/view?usp=sharing" target="_blank" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center">
+                        <i data-feather="download" class="mr-2"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-2 text-white">My Skills</h2>
+            <p class="text-indigo-400 text-center mb-12">The technologies I work with.</p>
+             <div class="max-w-4xl mx-auto bg-gray-800 p-8 rounded-lg shadow-lg mb-12">
+                <p class="text-center text-gray-300">I have hands-on experience with programming languages like C, C++, Python, Java, and JavaScript. My web development skills include HTML, CSS, Tailwind CSS, and basic JavaScript. I'm also exploring Artificial Intelligence and Machine Learning, with a focus on data preprocessing, exploratory data analysis (EDA), and building simple models. I work with tools like GitHub, Jupyter Notebook, Streamlit, OpenCV, Mediapipe, and Pygame. Alongside technical skills, I value teamwork, clear communication, and creative problem-solving.</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://banner2.cleanpng.com/20171217/033/av2bv0zlf.webp" alt="C" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">C</h3></div>
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://i.postimg.cc/dtqdQPKD/c2664dcf18d2fd777aa954df6cd113a2.jpg" alt="C++" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">C++</h3></div>
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="Python" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">Python</h3></div>
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://www.vectorlogo.zone/logos/java/java-icon.svg" alt="Java" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">Java</h3></div>
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">JavaScript</h3></div>
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML5" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">HTML5</h3></div>
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="CSS3" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">CSS3</h3></div>
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">Tailwind CSS</h3></div>
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">GitHub</h3></div>
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-icon.svg" alt="Jupyter" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">Jupyter</h3></div>
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.svg" alt="Streamlit" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">Streamlit</h3></div>
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="OpenCV" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">OpenCV</h3></div>
+                <div class="skill-card bg-gray-800 p-6 rounded-lg text-center transition duration-300"><img src="https://www.pygame.org/docs/_images/pygame_logo.png" alt="Pygame" class="h-16 w-16 mx-auto mb-4"><h3 class="font-semibold text-white">Pygame</h3></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-2 text-white">My Projects</h2>
+            <p class="text-indigo-400 text-center mb-12">A selection of my best work.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1: Quiz App -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/111827/FFFFFF?text=Quiz+App" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/111827/FFFFFF?text=Project';"
+                         alt="Quiz App Project" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Advanced Quiz App</h3>
+                        <p class="text-gray-400 mb-4">A dynamic, categorized quiz application featuring a timer, scoring system, and high score tracking with Firebase integration.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-500/20 text-indigo-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">HTML</span>
+                            <span class="bg-indigo-500/20 text-indigo-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tailwind CSS</span>
+                            <span class="bg-indigo-500/20 text-indigo-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">JavaScript</span>
+                            <span class="bg-indigo-500/20 text-indigo-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Firebase</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="https://debojyoti9.github.io/quiz-app/" target="_blank" class="text-indigo-400 hover:text-indigo-300 font-semibold inline-flex items-center">Live Demo <i data-feather="arrow-right" class="ml-1 h-4 w-4"></i></a>
+                            <a href="https://github.com/Debojyoti9/quiz-app" target="_blank" class="text-gray-400 hover:text-white"><i data-feather="github" class="h-6 w-6"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Bank Management System -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/111827/FFFFFF?text=Bank+System" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/111827/FFFFFF?text=Project';"
+                         alt="Bank Management System Project" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Bank Management System</h3>
+                        <p class="text-gray-400 mb-4">A command-line based banking application built with Java to manage customer accounts, deposits, and withdrawals.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-500/20 text-indigo-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Java</span>
+                            <span class="bg-indigo-500/20 text-indigo-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Object-Oriented Programming</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 font-semibold inline-flex items-center">No Live Demo</span>
+                            <a href="https://github.com/Debojyoti9/Bank-Management-System" target="_blank" class="text-gray-400 hover:text-white"><i data-feather="github" class="h-6 w-6"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Journey Section -->
+        <section id="experience" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-2 text-white">Projects & Learning</h2>
+            <p class="text-indigo-400 text-center mb-12">My professional journey.</p>
+            <div class="max-w-3xl mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
+                <p class="text-center text-gray-300">While I don't have formal industry experience yet, I have completed several academic and self-initiated projects using Python, HTML, CSS, JavaScript, and Machine Learning tools. I’m constantly learning, experimenting, and refining my skills through practical application.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-2 text-white">Get In Touch</h2>
+            <p class="text-indigo-400 text-center mb-12">I'm open to new opportunities and collaborations.</p>
+            <div class="max-w-3xl mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
+                <!-- IMPORTANT: Replace "your_form_id" with your actual Formspree ID -->
+                <form action="https://formspree.io/f/mqalblwg" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Your Name</label>
+                            <input type="text" name="name" id="name" required class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Your Email</label>
+                            <input type="email" name="_replyto" id="email" required class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                        <input type="text" name="subject" id="subject" required class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                        <textarea name="message" id="message" rows="5" required class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="container mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://github.com/Debojyoti9" target="_blank" class="text-gray-400 hover:text-white"><i data-feather="github" class="h-6 w-6"></i></a>
+                <a href="https://www.linkedin.com/in/debojyoti-2003-deb/" target="_blank" class="text-gray-400 hover:text-white"><i data-feather="linkedin" class="h-6 w-6"></i></a>
+                <a href="https://www.facebook.com/DebojyotiDeb1122" target="_blank" class="text-gray-400 hover:text-white"><i data-feather="facebook" class="h-6 w-6"></i></a>
+                <a href="mailto:ddeb8582@gmail.com" class="text-gray-400 hover:text-white"><i data-feather="mail" class="h-6 w-6"></i></a>
+            </div>
+            <p>&copy; 2024 Debojyoti Deb. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Feather Icons
+        feather.replace();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuIcon = mobileMenuButton.querySelector('i');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenuIcon.setAttribute('data-feather', 'menu');
+            } else {
+                mobileMenuIcon.setAttribute('data-feather', 'x');
+            }
+            feather.replace(); // Re-render icons
+        });
+
+        // Close mobile menu when a link is clicked
+        const navLinks = document.querySelectorAll('#mobile-menu a, .nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuIcon.setAttribute('data-feather', 'menu');
+                    feather.replace();
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>
